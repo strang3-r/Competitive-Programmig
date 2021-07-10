@@ -1,4 +1,4 @@
-// Buying_Tablet.cpp
+// Movie_Weekend.cpp
 
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
@@ -34,10 +34,10 @@ void file_i_o(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
-/* <!-- #ifndef ONLINE_JUDGE
-			freopen("input.txt", "r", stdin);
-			freopen("output.txt", "w", stdout);
-		#endif --> */
+/*<-- #ifndef ONLINE_JUDGE
+		freopen("input.txt", "r", stdin);
+		freopen("output.txt", "w", stdout);
+	#endif -->*/
 }
 
 int main(int argc, char const *argv[])
@@ -50,10 +50,43 @@ int main(int argc, char const *argv[])
 
 	w(t){
 
-	/* <!-- <!-- Write Code Here -->  --> */
+	// <!-- Write Code Here -->
 
-		
-	
+		ll n;
+
+		cin>>n;
+
+		vi Li(n);
+		vi Ri(n);
+
+		loop(i, 0, n-1){
+			cin>>Li[i];
+		}
+		loop(i, 0, n-1){
+			cin>>Ri[i];
+		}
+
+		ll maxLR = INT_MIN;
+		ll maxR = INT_MIN;
+
+		ll res=0;
+
+		loop(i, 0, n-1){
+			if(Li[i]*Ri[i] > maxLR){
+				res = i;
+				maxR = Ri[i];
+				maxLR = Li[i]*Ri[i];
+			}
+			else if(Li[i]*Ri[i] == maxLR){
+				if(Ri[i] > maxR){
+					res = i;
+					maxR = Ri[i];
+					maxLR = Li[i]*Ri[i];
+				}
+			}
+		}
+
+		cout<<res+1<<endl;
 
 	}
 
