@@ -1,7 +1,9 @@
-// Puppy_Sum.cpp
+// Good_Joke.cpp
+
 #include <bits/stdc++.h>
-/*#include <ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;*/
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
 using namespace std;
 #define ff                 first
 #define ss                 second
@@ -24,36 +26,41 @@ using namespace std;
 #define ps(x, y)           fixed<<setprecision(y)<<x
 #define mk(arr,n,type)     type *arr = new type[n];
 #define w(t)               int x; cin>>x; while(x--)
-/*mt19937                    rng(chrono::steady_clock::now,time_since_epoch(),count());
-typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
-*/
+// mt19937                    rng(chrono::steady_clock::now,time_since_epoch(),count());
+typedef tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update> pbds;
+
     
 void file_i_o(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
-    #ifndef ONLINE_JUDGE
-		freopen("input.txt", "r", stdin);
-		freopen("output.txt", "w", stdout);
-	#endif
-}
-int sum_n(int n){
-	return (n*(n+1)/2);
-}
-int sum(int a,int d){
-	while(a--){
-		d = sum_n(d);
-	}
-	return d;
+/* <!-- #ifndef ONLINE_JUDGE
+			freopen("input.txt", "r", stdin);
+			freopen("output.txt", "w", stdout);
+		#endif --> */
 }
 
 int main(int argc, char const *argv[])
 {
-	// file_i_o();
+
+	file_i_o();
+
+	clock_t start, end;
+    start = clock();
+
 	w(t){
-		int a,b;
-		cin>>a>>b;
-		cout<<sum(a, b)<<endl;
+
+	/* <!-- <!-- Write Code Here -->  --> */
+
+		
+	
+
 	}
+
+	end = clock();
+	
+	double time_taken=double(end-start)/double(CLOCKS_PER_SEC);
+    cerr<<"\nTime : "<<fixed<<time_taken<<setprecision(5)<<" s \n";
+
 	return 0;
 }
