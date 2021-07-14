@@ -4,6 +4,12 @@
 *.exe
 .exe
 
+*.tmp.drivedownload
+.tmp.drivedownload
+
+*.drivedownload
+.drivedownload
+
 ## User settings
 xcuserdata/
 

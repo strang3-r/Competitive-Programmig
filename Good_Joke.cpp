@@ -1,5 +1,6 @@
 // Good_Joke.cpp
 
+/*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -50,17 +51,26 @@ int main(int argc, char const *argv[])
 
 	w(t){
 
-	/* <!-- <!-- Write Code Here -->  --> */
+	/* <!-- Write Code Here --> */
 
+		int n;
+		cin>>n;
 		
-	
+		int ans = 0;
+		for(int i = 1; i<=n; i++){
+			int x, y;
+			cin>>x>>y;
+			ans ^= i;
+		}
+
+		cout<<ans<<endl;
 
 	}
 
 	end = clock();
 	
 	double time_taken=double(end-start)/double(CLOCKS_PER_SEC);
-    cerr<<"\nTime : "<<fixed<<time_taken<<setprecision(5)<<" s \n";
-
+    cerr<<"\nTime : "<<fixed<<time_taken<<setprecision(5)<<" sec \n";
+    cerr<<"Coded By Black Devil"<<endl;
 	return 0;
 }
