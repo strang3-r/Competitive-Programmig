@@ -1,4 +1,4 @@
-// IPL_RCB.cpp
+// Heaven_Earth.cpp
 
 /*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
@@ -53,14 +53,7 @@ int main(int argc, char const *argv[])
 
 	/* <!-- Write Code Here --> */
 
-		int x, y;
-		cin>>x>>y;
 		
-		if(x<=y)
-			cout<<0<<endl;
-		else if(x>y){
-			cout<<(x-y)<<endl;
-		}
 
 	
 

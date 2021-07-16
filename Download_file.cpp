@@ -1,4 +1,4 @@
-// IPL_RCB.cpp
+// Download_file.cpp
 
 /*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
@@ -53,16 +53,24 @@ int main(int argc, char const *argv[])
 
 	/* <!-- Write Code Here --> */
 
-		int x, y;
-		cin>>x>>y;
-		
-		if(x<=y)
-			cout<<0<<endl;
-		else if(x>y){
-			cout<<(x-y)<<endl;
+		int n, k;
+		cin>>n>>k;
+
+		int sol = 0;
+
+		while(n--){
+			int t, d;
+			cin>>t>>d;
+			if(t<k){
+				k = k-t;
+			}
+			else{
+				sol += (t-k)*d;
+				k=0;
+			}
 		}
 
-	
+		cout<<sol<<endl;
 
 	}
 
