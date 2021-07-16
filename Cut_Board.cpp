@@ -1,5 +1,4 @@
-// Cats_Dogs.cpp
-
+// Cut_Board.cpp
 
 /*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
@@ -54,15 +53,16 @@ int main(int argc, char const *argv[])
 
 	/* <!-- Write Code Here --> */
 
-		ll c, d, l;
+		int n, m;
 
-		cin>>c>>d>>l;
-		
+		cin>>n>>m;
 
-		if((c>=2*d and l>=4*(c-d) and l<=4*(c+d) and l%4==0) or (c<2*d and l>=4*d and l<=4*(c+d) and l%4==0))
-			cout<<"yes"<<endl;
-		else
-			cout<<"no"<<endl;
+		int sum = n+m;
+
+		int prod = n*m;
+
+		cout<<(prod-sum)+1<<endl;
+	
 
 	}
 
@@ -70,6 +70,6 @@ int main(int argc, char const *argv[])
 	
 	double time_taken=double(end-start)/double(CLOCKS_PER_SEC);
     cerr<<"\nTime : "<<fixed<<time_taken<<setprecision(5)<<" s \n";
-    cerr<<"Coded By Black Devil"<<endl;
+    cerr<<"Coded By Black_Devil"<<endl;
 	return 0;
 }

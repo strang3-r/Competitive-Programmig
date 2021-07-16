@@ -1,5 +1,4 @@
-// Cats_Dogs.cpp
-
+// IPL_RCB.cpp
 
 /*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
@@ -54,15 +53,8 @@ int main(int argc, char const *argv[])
 
 	/* <!-- Write Code Here --> */
 
-		ll c, d, l;
 
-		cin>>c>>d>>l;
-		
-
-		if((c>=2*d and l>=4*(c-d) and l<=4*(c+d) and l%4==0) or (c<2*d and l>=4*d and l<=4*(c+d) and l%4==0))
-			cout<<"yes"<<endl;
-		else
-			cout<<"no"<<endl;
+	
 
 	}
 

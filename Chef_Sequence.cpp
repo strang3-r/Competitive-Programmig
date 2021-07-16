@@ -1,5 +1,4 @@
-// Cats_Dogs.cpp
-
+// Chef_Sequence.cpp
 
 /*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
@@ -53,16 +52,36 @@ int main(int argc, char const *argv[])
 	w(t){
 
 	/* <!-- Write Code Here --> */
+		ll n;
+		cin>>n;
 
-		ll c, d, l;
+		ll arr1[n];
+		loop(i, 0, n-1){
+			cin>>arr1[i];
+		}
 
-		cin>>c>>d>>l;
-		
+		ll m;
+		cin>>m;
 
-		if((c>=2*d and l>=4*(c-d) and l<=4*(c+d) and l%4==0) or (c<2*d and l>=4*d and l<=4*(c+d) and l%4==0))
-			cout<<"yes"<<endl;
+		ll arr2[m];
+		loop(i, 0, m-1){
+			cin>>arr2[i];
+		}
+		int i = 0, j = 0;
+		while(i<n and j<m){
+			if(arr1[i] == arr2[j]){
+				i++;
+				j++;
+			}
+			else{
+				i++;
+			}
+		}
+
+		if(j==m)
+			cout<<"Yes"<<endl;
 		else
-			cout<<"no"<<endl;
+			cout<<"No"<<endl;
 
 	}
 

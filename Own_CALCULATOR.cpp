@@ -1,5 +1,4 @@
-// Cats_Dogs.cpp
-
+// Own_CALCULATOR.cpp
 
 /*<!-- Created By Black Devil -->*/
 #include <bits/stdc++.h>
@@ -50,21 +49,21 @@ int main(int argc, char const *argv[])
 	clock_t start, end;
     start = clock();
 
-	w(t){
+	double a, b;
+	char ch;
 
-	/* <!-- Write Code Here --> */
+	cin>>a>>b;
+	cin>>ch;
 
-		ll c, d, l;
+	if(ch=='+')
+		cout<<fixed<<setprecision(6)<<a+b<<endl;
+	if(ch=='-')
+		cout<<fixed<<setprecision(6)<<a-b<<endl;
+	if(ch=='*')
+		cout<<fixed<<setprecision(6)<<a*b<<endl;
+	if(ch=='/')
+		cout<<fixed<<setprecision(6)<<a/b<<endl;
 
-		cin>>c>>d>>l;
-		
-
-		if((c>=2*d and l>=4*(c-d) and l<=4*(c+d) and l%4==0) or (c<2*d and l>=4*d and l<=4*(c+d) and l%4==0))
-			cout<<"yes"<<endl;
-		else
-			cout<<"no"<<endl;
-
-	}
 
 	end = clock();
 	

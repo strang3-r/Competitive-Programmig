@@ -1,4 +1,4 @@
-// Cats_Dogs.cpp
+// Similar_Dishes.cpp
 
 
 /*<!-- Created By Black Devil -->*/
@@ -54,15 +54,16 @@ int main(int argc, char const *argv[])
 
 	/* <!-- Write Code Here --> */
 
-		ll c, d, l;
-
-		cin>>c>>d>>l;
-		
-
-		if((c>=2*d and l>=4*(c-d) and l<=4*(c+d) and l%4==0) or (c<2*d and l>=4*d and l<=4*(c+d) and l%4==0))
-			cout<<"yes"<<endl;
+		string str;
+		set<string>st;
+		loop(i, 0, 7){
+			cin>>str;
+			st.insert(str);
+		}
+		if(st.size()<=6)
+			cout<<"similar"<<endl;
 		else
-			cout<<"no"<<endl;
+			cout<<"dissimilar"<<endl;
 
 	}
 
